@@ -12,9 +12,6 @@ let contador = 0;
 app.get("/api", (req, res) => {
     const { incremento } = req.query;
 
-    if (typeof incremento !== "number") {
-        return res.status(404).send("womp");
-    }
 
     contador += parseInt(incremento);
 
