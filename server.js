@@ -16,7 +16,7 @@ app.get("/api", (req, res) => {
     contador += parseInt(incremento);
 
     console.log("contador: " + contador);
-    res.send("adicionado");
+    res.status(200).send("adicionado");
 });
 
 module.exports = app;
