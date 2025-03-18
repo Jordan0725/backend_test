@@ -21,6 +21,6 @@ app.get("/api", (req, res) => {
 
 app.get("/api/teste", (req, res) => {
     res.status(200).send("API Funcionando perfeitamente!!!!!");
-});
+});//
 
 module.exports = app;
