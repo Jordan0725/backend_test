@@ -19,4 +19,8 @@ app.get("/api", (req, res) => {
     res.status(200).send("adicionado");
 });
 
+app.get("/api/teste", (req, res) => {
+    res.status(200).send("API Funcionando perfeitamente!!!!!");
+});
+
 module.exports = app;
